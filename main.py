@@ -15,9 +15,9 @@ start = [start_hour,start_min]
 slots.append(start)
 
 for x in range(No_of_Slots):
-    if((start[1]+15)>=60):
+    if((start[1]+slot_time)>=60):
         start[0]=start[0]+1
-        start[1]=(start[1]+15)-60
+        start[1]=(start[1]+slot_time)-60
     else:
-        start[1]=start[1]+15
+        start[1]=start[1]+slot_time
     print(start)
